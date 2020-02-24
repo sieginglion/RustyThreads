@@ -13,3 +13,12 @@ fn main() {
     assert_eq!(results, vec![true]);
 }
 ```
+
+```Rust
+mod ParMap;
+
+fn main() {
+    let a = vec![0, 1, 2, 3];
+    let b = ParMap::par_map(a, |x| x + 1, 2);
+}
+```
